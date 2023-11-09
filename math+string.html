@@ -1,0 +1,84 @@
+<html>
+<body>
+<h2>JavaScript Math functions</h2>
+<p id="demo"></p>
+<p id="s"></p>
+<p id="dh"></p>
+<p id="dhho"></p>
+<p id="de"></p>
+<p id="dea"></p>
+<p id="demo1"></p>
+<p id="demo11"></p>
+<p id="deamo"></p>
+<p id="desamo"></p>
+<p></p>
+<p id="demodd"></p>
+<p id="demoxx"></p>
+<p id="demoqq"></p>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+<button onclick="myFunction1()">Try it</button>
+<p id="demoggg">Please visit Microsoft!</p>
+<h2>The replaceAll() Method</h2>
+<p>ES2021 intoduced the string method replaceAll().</p>
+<p id="demommm"></p>
+<h1>JavaScript String Methods</h1>
+<p>Convert string to upper case:</p>
+<button onclick="myFunction11()">Try it</button>
+<p id="demojj">Hello World!</p>
+<h1>JavaScript String Methods</h1>
+<p>Convert string to lower case:</p>
+<button onclick="myFunction111()">Try it</button>
+<p id="demol">Hello World!</p>
+<p id="demopp"></p>
+<p id="demotr"></p>
+<p id="demoat"></p>
+<script>
+document.getElementById("demo").innerHTML = Math.round(4.6);
+document.getElementById("s").innerHTML = Math.ceil(4.4);
+document.getElementById("dh").innerHTML = Math.floor(4.7);
+document.getElementById("dhho").innerHTML = Math.sqrt(64);
+document.getElementById("de").innerHTML=Math.min(0, 150, 30, 20, -8, -200);
+document.getElementById("dea").innerHTML=Math.max(0, 150, 30, 20, -8, -200);
+document.getElementById("demo1").innerHTML="The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+document.getElementById("demo11").innerHTML = "The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+document.getElementById("deamo").innerHTML = Math.pow(8,2);
+document.getElementById("desmo").innerHTML = Math.trunc(4.7);
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demodd").innerHTML = text.length;
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demoxx").innerHTML = str.substring(7,13);
+let strs = "Apple, Banana, Kiwi";
+document.getElementById("demoqq").innerHTML = strs.substr(7,6);
+function myFunction1() {
+  let text = document.getElementById("demoggg").innerHTML;
+  document.getElementById("demoggg").innerHTML =
+  text.replace("Microsoft","W3Schools");
+}
+let textc = "I love cats. Cats are very easy to love. Cats are very popular."
+textc = textc.replaceAll("Cats","Dogs");
+textc = textc.replaceAll("cats","dogs");
+
+document.getElementById("demommm").innerHTML = textc; 
+function myFunction11() {
+  let textj = document.getElementById("demojj").innerHTML;
+  document.getElementById("demojj").innerHTML =
+  textj.toUpperCase();
+}
+function myFunction111() {
+  let textl = document.getElementById("demol").innerHTML;
+  document.getElementById("demol").innerHTML =
+  textl.toLowerCase();
+}
+let text11 = "Hello";
+let text21 = "World!";
+let text31 = text11.concat(" ",text21);
+document.getElementById("demopp").innerHTML = text31;
+let text17 = "     Hello World!     ";
+let text27 = text17.trim();
+document.getElementById("demotr").innerHTML =
+"Length text17 = " + text17.length + "<br>Length text27 = " + text27.length;
+var textr = "HELLO WORLD";
+document.getElementById("demoat").innerHTML = textr.charAt(0);
+</script>
+</body>
+</html>
