@@ -1,9 +1,20 @@
 <html>
-<head>
-<title>hui</title>
-</head>
-<body bgcolor="yellow">
-<form action="loginpage.html" method="post">
+<body>
+<?php
+require('1stlogin.php');
+if(isset($_POST['submitt']))
+{
+
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$pass=$_POST['pass'];
+$sql="insert into login(firstname,lastname,password)values('$fname','$lname','$pass');";
+$result=mysql_query($conn,$sql);
+if($result){echo"new records successfully created";}}
+else
+{
+?>
+<form action="1stinsert.php" method="post">
 <center>
 <label for="Name">Enter first Name:</label>
 <input type="text"name="fname" id="Name"placeholder="first Name"><br>
@@ -15,6 +26,7 @@
 <br>
 <input type="submit"value="create now">
 <br>
+<?php}?>
 </form>
 </body>
 </html>
