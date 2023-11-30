@@ -18,11 +18,11 @@ $sql="select * from user_registration where Username='$name' AND Password='$pass
 $result=mysqli_query($conn,$sql);
 if(mysqli_num_rows($result)>0)
 {
-	echo "Login Success";
+	header('Location: successpage.html');
 }
 else
 {
- 	echo "Login failed";
+ 	header('Location: fail.html');
 }
 mysqli_close($conn);
 }
@@ -39,7 +39,7 @@ else
 	<label for="pwd">Password:</label>&nbsp;
 	<input type="password" name="pd" id="pwd"><br><br>
 
-	<i><b>New User?<b><a href="register.html" target="_self">Register</a></i><br><br>
+	<i><b>New User?<b><a href="insert.php" target="_self">Register</a></i><br><br>
 
 	<input type="submit" name="sub" id="sub" value="Sign in">&nbsp;&nbsp;
 	<input type="reset" name="rst" id="rst" value="Clear">
