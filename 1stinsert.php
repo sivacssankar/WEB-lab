@@ -1,5 +1,5 @@
 <html>
-<body>
+<body bgcolor="yellow">
 <?php
 require('1stlogin.php');
 if(isset($_POST['submitt']))
