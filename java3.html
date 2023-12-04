@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+var c=0;
+
+var score=0;
+
+function funct()
+
+{ 
+if(document.getElementById('javascript').checked)
+{
+score++;
+
+}
+
+if(document.getElementById('russia').checked)
+{
+score++;
+
+} if(document.getElementById('beijing').checked)
+{
+score++;
+
+} if(document.getElementById('corona virus').checked)
+{
+score++;
+
+}
+
+document.write("your score is:");
+
+document.write(score);
+}
+</script>
+
+<link rel="stylesheet" href="quiz.css">
+
+</head>
+
+<body>
+
+<form name="quiz">
+
+<h1>QUIZ</h1>
+
+<div>
+
+<p>1. what is the best programming language to learn in 2021?</p>
+
+<p><input type="radio" id="html" name="question1" value="A.HTML">A.HTML</p> <p><input type="radio"id="python" name="question1"
+
+value="B.HTML">B.PYTHON</p>
+
+<p><input type="radio" id="javascript" name="question1"
+
+value="C.HTML">CJAVASCRIPT</p>
+
+</div>
+
+<div>
+
+<p>2.which is the biggest country in the world?</p>
+
+<p><input type="radio" id="russia" name="question2"
+
+value="A.country">A.RUSSIA</p>
+
+<p><input type="radio" id="america" name="question2"
+
+value="B.country">B.AMERICA</p>
+
+<p><input type="radio" id="china" name="question2"
+
+value="C.country">C.CHINA</p>
+
+</div>
+
+<div>
+
+<p>3.what is the capital of china?</p>
+
+<p><input type="radio" id="guanzhou" name="question3"
+
+value="A.capital">A.GUANZHOU</p>
+
+<p><input type="radio" id="nanjini" name="question3"
+
+value="B.capital">B.NANJINI</p>
+
+<p><input type="radio" id="beijing" name="question3"
+
+value="C.capital">C.BEIJING</p>
+
+</div>
+
+<div>
+
+<p>4.what is the biggest problem in the now?</p>
+
+<p><input type="radio" id="financial problems" name="question4"
+
+value="A.problem">A.FINANCIAL PROBLEMS</p>
+
+<p><input type="radio" id="corona virus" name="question4"
+
+value="B.problem">B.CORONA VIRUS</p>
+
+<p><input type="radio" id="economic problems" name="question4"
+
+value="C.problrm">C.ECONOMIC PROBLEMS</p>
+
+</div>
+
+<button onclick="funct()">SUBMIT</button>
+
+</form>
+
+</body>
+
+</html>
