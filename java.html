@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Image</title>
+    <style>
+       
+
+        img{
+            background-repeat: no-repeat;
+            width: 50%;
+            height:50%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <center>
+ <img src="yoru.png" id="image"><br><br>
+ <h1 id="heading1">Hover mouse here</h1>
+ <h1 id="heading2">hello world</h1>
+<script>
+    document.getElementById("image").addEventListener("mouseover",change1);
+    document.getElementById("image").addEventListener("mouseout",change2);
+    document.getElementById("heading1").addEventListener("mouseover",change1);
+    document.getElementById("heading1").addEventListener("mouseout",change2);
+    function change1(){
+        document.getElementById('image').src = "yoru.png";
+        document.getElementById('heading1').style.display="none";
+    }
+    function change2(){
+        document.getElementById('image').src = "jp.png";
+        document.getElementById('heading1').style.display="block";
+    }
+</script>
+</center>
+</body>
+</html>
