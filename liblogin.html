@@ -4,7 +4,7 @@
 <style>
 body
 {
-background-image:url("lib3.jpg");
+background-image:url("jp.png");
 background-repeat:no-repeat;
 background-position:center;
 background-size:cover;
@@ -26,18 +26,44 @@ background-color:FloralWhite;
 
 </style>
 <body>
+<?php
+require('1stlogin.php');
+if(isset($_POST['sub']))
+{
+
+$fname=$_POST['txt1'];
+$lname=$_POST['pd'];
+
+	if($fname=="siva" and $lname=="123")
+	{ 
+	header('location:button.html');
+	}
+	else
+	{
+	header('location:fail.html');
+	}
+}
+else
+{
+
+?>
+
 <center>
 <h1><b><big>Library Management System</big></b></h1>
 
-<form method="POST">
+<form method="POST" action="">
 	<label for="un"><b>Username:</b></label>
 	<input type="text" name="txt1" id="un"><br><br>
 
 	<label for="pwd"><b>Password:</b></label>
 	<input type="password" name="pd" id="pwd"><br><br>
 
-	<input type="submit" name="sub" id="sub" value="Log in">
+	<input type="submit" name="sub" id="sub" value="Log in" >
 </form>
+<?php
+}
+?>
+
 </center>
 </body>
 </html>
